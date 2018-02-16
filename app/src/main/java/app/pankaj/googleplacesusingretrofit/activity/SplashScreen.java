@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 
+import app.pankaj.googleplacesusingretrofit.LoginActivity;
+import app.pankaj.googleplacesusingretrofit.Navigation;
 import app.pankaj.googleplacesusingretrofit.R;
 
 public class SplashScreen extends AppCompatActivity {
@@ -21,12 +23,21 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void run() {
+//                    if(new LoginActivity().) {
+//                        Intent i = new Intent(SplashScreen.this, Navigation.class);
+//                        startActivity(i);
+//                    }
 
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
+
+//               else{
+                   Intent i = new Intent(SplashScreen.this, LoginActivity.class);
                 startActivity(i);
 
 
+
+
                 finish();
+//                }
             }
         }, SPLASH_TIME_OUT);
     }

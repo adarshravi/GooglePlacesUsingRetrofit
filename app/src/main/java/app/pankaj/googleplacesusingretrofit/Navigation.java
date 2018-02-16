@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import app.pankaj.googleplacesusingretrofit.fragment.DataFragment;
 import app.pankaj.googleplacesusingretrofit.navigation.AboutUs;
 import app.pankaj.googleplacesusingretrofit.navigation.Logout;
 
@@ -35,6 +36,13 @@ public class Navigation extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager=getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        DataFragment dataFragment=new DataFragment();
+        fragmentTransaction.replace(R.id.screen_area,dataFragment);
+//        fragmentTransaction.replace(R.id.linearParent,dataFragment);
+        fragmentTransaction.commit();
     }
 
     @Override
