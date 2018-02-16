@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.pankaj.googleplacesusingretrofit.R;
-import app.pankaj.googleplacesusingretrofit.activity.MainActivity;
 import app.pankaj.googleplacesusingretrofit.adapter.SearchItemAdapter;
 import app.pankaj.googleplacesusingretrofit.interfaces.ConnectionInterface;
 import app.pankaj.googleplacesusingretrofit.model.ResponseData;

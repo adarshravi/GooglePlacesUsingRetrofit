@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import app.pankaj.googleplacesusingretrofit.activity.MainActivity;
 import app.pankaj.googleplacesusingretrofit.helper.SessionManager;
 import app.pankaj.googleplacesusingretrofit.helper.User;
 

@@ -22,5 +22,5 @@
         android:textColor="#454545"
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:text="SchoolOfFishTech" />
+        android:text="@string/school_of_fish_tech" />
 </RelativeLayout>

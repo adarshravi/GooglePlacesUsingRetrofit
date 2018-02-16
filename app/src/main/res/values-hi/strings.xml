@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GooglePlacesUsingRetrofit</string>
+    <string name="hello_blank_fragment">नमस्ते रिक्त टुकड़ा</string>
+    <string name="title_activity_navigation">पथ प्रदर्शन</string>
+
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
+    <string name="register_yourself">नया उपयोगकर्ता पंजीकृत करें</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="username_emai">उपयोगकर्ता का नाम या ईमेल</string>
+    <string name="Name">नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="signUp">साइन अप करें</string>
+    <string name="school_of_fish_tech">स्कूल ऑफफिशटेक</string>
+    <string name="about_details">बस प्रकृति में मछली के एक स्कूल के रूप में, सामाजिक कारणों से एक साथ तैरता है,
+         शिकारियों से सुरक्षा बढ़ा, जीवित रहने की उनकी संभावना में सुधार, स्कूल ऑफ फिश टेक्नोलॉजीज
+         अलग-अलग पूल के आंकड़ों को इकट्ठा करने के लिए मौजूदा या नई तकनीक के समन्वित उपयोग को सक्षम करेगा और
+         वितरित सूचना प्रणाली, स्कूल ऑफ फिश टेक्नोलॉजीज से ग्राहकों को ग्राहकों के लिए प्रासंगिक रहने में मदद मिलेगी और
+         प्रतिस्पर्धा से आगे</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="are_you_sure">क्या आपको यकीन है</string>
+    <string name="no">नहीं</string>
+    <string name="yes">हाँ</string>
+
+    <string name="enterPassword">पास वर्ड दर्ज करें</string>
+    <string name="action_settings">सेटिंग्स</string>
+</resources>

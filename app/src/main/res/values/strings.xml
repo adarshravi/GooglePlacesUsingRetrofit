@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">GooglePlacesUsingRetrofit</string>
-
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_navigation">Navigation</string>
 
@@ -9,6 +7,25 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="register_yourself">Register New User</string>
     <string name="sign_in">Sign In</string>
+    <string name="username_emai">Username or Email</string>
+    <string name="Name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signUp">SignUp</string>
+    <string name="school_of_fish_tech">SchoolOfFishTech</string>
+    <string name="about_details">Just as a school of fish in nature, swims together for social reasons,
+        increased protection from predators, improving their chance of survival, School of Fish Technologies
+        will enable coordinated use of existing or new technology to gather data from a pool of disparate and
+        distributed information systems, School of Fish technologies will help companies stay relevant to clients and
+        ahead of competition
+    </string>
+    <string name="about_us">ABOUT US</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
 
+    <string name="enterPassword">EnterPassword</string>
     <string name="action_settings">Settings</string>
+    <string name="hindi">Hindi</string>
 </resources>

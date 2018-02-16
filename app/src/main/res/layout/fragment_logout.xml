@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Are you sure "
+        android:text="@string/are_you_sure"
         android:textColor="#0000FF"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -22,14 +22,14 @@
             android:id="@+id/btn_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No"
+            android:text="@string/no"
             android:layout_weight="0.4"/>
         <Button
             android:id="@+id/btn_yes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
-            android:text="Yes"/>
+            android:text="@string/yes"/>
 
     </LinearLayout>
 

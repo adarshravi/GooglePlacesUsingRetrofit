@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Are you sure "
+        android:text="@string/about_us"
         android:textColor="#0000FF"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -18,7 +18,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Just as a school of fish in nature, swims together for social reasons, increased protection from predators, improving their chance of survival, School of Fish Technologies will enable coordinated use of existing or new technology to gather data from a pool of disparate and distributed information systems, School of Fish technologies will help companies stay relevant to clients and ahead of competition"
+        android:text="@string/about_details"
         android:textColor="#f700ff"
         android:textStyle="bold" />
 
