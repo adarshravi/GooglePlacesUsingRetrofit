@@ -1,6 +1,7 @@
 package app.pankaj.googleplacesusingretrofit.activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +13,7 @@ import app.pankaj.googleplacesusingretrofit.R;
 public class SplashScreen extends AppCompatActivity {
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 3000;
+    SharedPreferences pref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +29,14 @@ public class SplashScreen extends AppCompatActivity {
 //                        Intent i = new Intent(SplashScreen.this, Navigation.class);
 //                        startActivity(i);
 //                    }
+                pref=getSharedPreferences("data",MODE_PRIVATE);
+                if(pref.contains("email") && pref.contains("password")){
+                    startActivity(new Intent(SplashScreen.this,Navigation.class));
+                    finish();
+                }
 
 
-//               else{
+               else{
                    Intent i = new Intent(SplashScreen.this, LoginActivity.class);
                 startActivity(i);
 
@@ -37,7 +44,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
                 finish();
-//                }
+                }
             }
         }, SPLASH_TIME_OUT);
     }
