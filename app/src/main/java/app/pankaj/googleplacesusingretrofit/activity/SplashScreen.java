@@ -25,10 +25,7 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void run() {
-//                    if(new LoginActivity().) {
-//                        Intent i = new Intent(SplashScreen.this, Navigation.class);
-//                        startActivity(i);
-//                    }
+
                 pref=getSharedPreferences("data",MODE_PRIVATE);
                 if(pref.contains("email") && pref.contains("password")){
                     startActivity(new Intent(SplashScreen.this,Navigation.class));
