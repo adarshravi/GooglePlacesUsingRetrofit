@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.et_login_button);
         sharedpreferences = getSharedPreferences(LoggedInPreferences, Context.MODE_PRIVATE);
-      
+
         session = new SessionManager(getApplicationContext());
 
         if (session.isLoggedIn()) {
