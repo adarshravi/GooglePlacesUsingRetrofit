@@ -1,5 +1,8 @@
 package app.pankaj.googleplacesusingretrofit;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,23 +13,31 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 
 import app.pankaj.googleplacesusingretrofit.fragment.DataFragment;
+import app.pankaj.googleplacesusingretrofit.helper.CommonUtils;
 import app.pankaj.googleplacesusingretrofit.navigation.AboutUs;
 import app.pankaj.googleplacesusingretrofit.navigation.Logout;
 
 public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static final String LoggedInPreferences = "LoggedInData" ;
+    Switch switchHindi;
+    SharedPreferences sharedpreferences;
+    NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -43,6 +54,29 @@ public class Navigation extends AppCompatActivity
         fragmentTransaction.replace(R.id.screen_area,dataFragment);
 //        fragmentTransaction.replace(R.id.linearParent,dataFragment);
         fragmentTransaction.commit();
+
+        sharedpreferences = getSharedPreferences(LoggedInPreferences, Context.MODE_PRIVATE);
+        navigationView= (NavigationView) findViewById(R.id.nav_view);
+        View view=navigationView.getMenu().getItem(2).getActionView();
+        switchHindi= (Switch) view.findViewById(R.id.switchHindi);
+        switchHindi.setChecked(sharedpreferences.getBoolean("hindiLanguage",false));
+        switchHindi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Log.e("value=====","val========"+isChecked);
+                SharedPreferences.Editor et=sharedpreferences.edit();
+                et.putBoolean("hindiLanguage",isChecked);
+                et.commit();
+
+                startActivity(new Intent(Navigation.this,Navigation.class));
+                finish();
+            }
+        });
+        String language="en";
+        if(sharedpreferences.getBoolean("hindiLanguage",false))
+            language="hi";
+        CommonUtils.setLanguage(this,language);
+
     }
 
     @Override
@@ -103,4 +137,5 @@ public class Navigation extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

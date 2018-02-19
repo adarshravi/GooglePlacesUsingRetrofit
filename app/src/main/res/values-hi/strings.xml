@@ -26,4 +26,6 @@
 
     <string name="enterPassword">पास वर्ड दर्ज करें</string>
     <string name="action_settings">सेटिंग्स</string>
+    <string name="hindi">हिंदी</string>
+
 </resources>
