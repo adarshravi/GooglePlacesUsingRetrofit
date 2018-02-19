@@ -81,7 +81,7 @@ public class RegisterActivity extends AppCompatActivity {
                     editor.putString("email",email);
                     editor.putString("password",password);
                     editor.commit();
-                    Toast.makeText(getApplicationContext(),"Please enter valid email address",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(),"Please enter valid email address",Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(RegisterActivity.this, Navigation.class);
                     startActivity(intent);
                     finish();
